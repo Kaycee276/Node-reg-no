@@ -1,6 +1,6 @@
-# Node-reg-no
+# JambRegNO
 
-Node-reg-no is a Node.js application that allows users to upload PDF files and extract registration numbers from them. The application utilizes Express.js to create a RESTful API, making it easy to integrate into other systems or use as a standalone service.
+JambRegNO is a clean and efficient Node.js application that extracts registration numbers from PDF files. The application provides a simple REST API for uploading PDFs and automatically extracting UNN registration numbers using pattern matching.
 
 ## Features
 
@@ -22,19 +22,23 @@ Node-reg-no is a Node.js application that allows users to upload PDF files and e
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd node-reg-no
+   cd JambRegNO
    ```
 2. Install the dependencies:
    ```bash
    npm install
    ```
-3. Set up your PostgreSQL database and update the connection details in the `.env` file.
+3. Set up your PostgreSQL database and update the connection details in `index.js`.
 
 ## Usage
 
 1. Start the server:
    ```bash
-   node index.js
+   npm start
+   ```
+   Or for development with auto-restart:
+   ```bash
+   npm run dev
    ```
 2. Use a tool like Postman or cURL to send a POST request to the `/upload` endpoint with a PDF file.
 
